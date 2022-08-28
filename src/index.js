@@ -11,12 +11,12 @@ create.addEventListener("click", function () {
       alertsections.classList.remove("alert-section");
     }, 3000);
   } else {
-    copyboxx(floors.value, lift.value);
+    addFloor(floors.value, lift.value);
   }
 });
 
 // adding Floor
-function copyboxx(e, liftNo) {
+function addFloor(e, liftNo) {
   section_output.innerHTML = "";
   for (let i = e; i > 0; i--) {
     section_output.innerHTML =
@@ -29,7 +29,7 @@ function copyboxx(e, liftNo) {
     </div>
     <div class="fursh">
     <div class="Lift-frush">
-    ${i == 1 ? copylift(liftNo) : ``}
+    ${i == 1 ? addLift(liftNo) : ``}
     </div>
       <div id="fursh-ground"></div>
     </div>
@@ -40,7 +40,7 @@ function copyboxx(e, liftNo) {
 }
 
 // adding  Lift
-function copylift(e) {
+function addLift(e) {
   let containerLift = document.createElement("div");
   containerLift.classList.add("lifts");
 
