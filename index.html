@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Lift Simulator</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="alert-sections">You Can Add Maximum 4 Lift Only.</div>
+      <!-- input section -->
+
+      <div class="section-input">
+        <div class="input-Data">
+          <label for="floors">Number Of Floors:</label>
+          <input type="number" id="floors" min="0" />
+          <label for="lift">Number Of Lifts:</label>
+          <input type="number" id="lift" min="1" max="3" />
+        </div>
+        <div class="submit-Data">
+          <button class="Generate">Generate</button>
+        </div>
+      </div>
+
+      <!-- output Section -->
+      <div class="section-output"></div>
+    </div>
+    <script src="src/index.js" async defer></script>
+  </body>
+</html>
